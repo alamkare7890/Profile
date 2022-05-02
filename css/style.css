@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+/*=========COMMON-CLASSES=========*/
+.container{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1270px;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    padding: 10px 12px;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: all 500ms linear;
+}
+/*========ANIMATION==========*/
+.button:hover{
+    transform: scalex(1.2);
+    background-color: #64aaba;
+}
+
+/*=========HEADER-SECTION========*/
+.header{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("../image/hero.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header .navigation{
+    width: 100%;
+    padding-top: 20px;
+    animation: profile 2s linear 500ms  forwards ;
+}
+/*========ANIMATION==========*/
+@keyframes profile{
+
+
+}
+
+.navigation .logo{
+    text-decoration: none;
+    font-size: 1.8rem;
+    width: 35%;
+    color: #f1f1f1;
+    transition: all 500ms linear;
+}
+.navigation .logo:hover{
+
+    transform: translatex(30px);
+}
+.navigation .logo .color{
+    color: yellow;
+}
+.navigation ul{
+    width: 60%;
+    justify-content: end;
+}
+.navigation ul li{
+    padding-left: 30px;
+    list-style-type: none;
+}
+.navigation ul li:hover{
+    background-color: cyan;
+    margin-left: 50px;
+    padding: 10px;  
+    border-radius: 5px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 1rem;
+}
+.header .header-text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #f1f1f1;
+    padding-top: 180px;
+
+}
+.header .header-text h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header .header-text p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 30px 0;
+    width: 48%;
+    margin: 0 auto;
+}
+
+.nav-icon a{
+    font-size: 35px;
+    color: #dbdbdb;
+    padding: 5px 7px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid yellow;
+    display: none;
+}
+
+/*============ABOUT-SECTION=============*/
+.about{
+    width: 100%;
+    padding: 50px 0;
+    
+}
+.about-content{
+    justify-content: space-between;
+}
+.about .image{
+    width: 50%;
+    padding: 10px;
+}
+.about .image img{
+    width: 100%;
+}
+
+.about .content{
+    width: 50%;
+    padding: 10px;
+}
+.about .content .intro{
+    text-align: center;
+}
+.about .content p{
+    font-size: 1rem;
+    padding: 10px 0;
+    line-height: 24px;
+    font-weight: 400;
+    color: lightslategrey;
+} 
+.about .content h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #999999;
+    font-weight: 900;
+
+}
+.read-more{
+    text-decoration: none;
+    color: seagreen;
+    display: none;
+}
+/*=============SERVICE-SECTION=============*/
+.service{
+    width: 100%;
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+.service .service-space{
+    justify-content: space-around;
+}
+.service .box{
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 4px solid gray ;
+
+}
+.service .box:hover{
+    border-color: yellow;
+}
+.service .box h1{
+    font-size: 1.2rem;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.service .box p{
+    line-height: 22px;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+.service .box .fa{
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;
+    color: #f1f1f1;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+/*==============HIRE ME!===============*/
+.hire-me{
+    width: 100%;
+    min-height: 250px;
+    background-image: url("../image/hireme-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 30px 0;
+
+}
+.hire-me .align{
+    text-align: center;
+    padding: 30px 0;
+
+}
+.hire-me .align h1{
+    text-transform: uppercase;
+    color: #f1f1f1;
+    padding: 50px 0;
+
+}
+/*==========WORKS=========*/
+.works{
+    width: 100%;
+    padding: 50px 0;
+}
+.works h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.works .nav-bar{
+    width: 100%;
+}
+.nav-bar ul{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: end;
+    padding: 20px 0;
+
+}
+.nav-bar ul li{
+    padding-right: 25px;
+    list-style-type: none;
+}
+.nav-bar ul li a{   
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999999;
+}
+.nav-bar ul li a:hover{
+    border-bottom: 5px solid gainsboro;
+}
+.image-gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-gallery .image img{
+    width: 100%;
+}
+
+
+/*=============CLIENTS==============*/
+.clients{
+    width: 100%;
+    min-height: 700px;
+    background-image: url("../image/testimonials-bg.jpg");
+    background-repeat:repeat-x;
+    background-position-y: center;
+    padding: 50px 0;
+}
+.clients h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    font-weight: 400;
+    text-align: center;
+}
+.black-background{
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-top: 50px;
+    background-color: #000;
+    opacity: 30%;
+}
+.profile-photo{
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.profile-photo img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.black-background p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #fff;
+    opacity: 100%;
+    font-weight: 400;
+    padding: 10px 30px;
+    text-align-last: center;
+}
+/*=========CONTACT-SAECTION==========*/
+.contact{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #333333;
+}
+.contact .fixed-width{
+    width: 75%;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.contact .fixed-width h1{
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.contact .fixed-width p{
+    font-size: 1rem;
+    text-align: center; 
+    color: #f1f1f1;
+    margin: 30px 0;    
+}
+.contact .flex-box{
+    justify-content: space-between;
+}
+.contact .left{
+    width: 50%;  
+}
+.contact .left input{
+    width: 100%;    
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.contact .left input::placeholder{
+    font-weight: 700;
+    color: gray;
+}
+.contact .left input:focus{
+    outline: none;
+}
+.contact .right{
+    width: 48%;
+}
+.contact .right textarea{
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.contact .right textarea::placeholder{
+    font-weight: 700;
+    color: gray;
+}
+.contact .right textarea:focus{
+    outline: none;
+
+}
+.button-align{
+    text-align: center;
+}
+/*=================MEDIA-QUERY START HERE============*/
+@media only screen and (min-width:1270px) and (max-width:1920px){
+/*========ROOT-ELEMETN=======*/
+    html, body{
+        font-size: 18px;
+    }
+/*=======COMMON-CLASSES========*/
+    .button{
+        padding: 12px 15px;
+    }
+/*=========HEADER-SECTION========*/
+    .header{
+        min-height: 800px;
+    }
+    .header .navigation{
+        padding-top: 50px;
+    }
+    .navigation ul li{
+        padding-left: 50px;
+
+    }
+    .header .header-text{
+        padding-top: 250px;
+
+    }
+/*============ABOUT-SECTION=============*/
+    .about .content p{
+        line-height: 28px;
+
+    }
+/*=============SERVICE-SECTION=============*/
+    .service .box p{
+        line-height: 28px;
+    }
+
+}
+@media only screen and (max-width:991px){
+/*========ROOT-ELEMETN=======*/
+
+
+
+/*=========COMMON-CLASSES=========*/
+/*=========HEADER-SECTION========*/
+.navigation ul{
+    width: 70%;
+}
+.navigation .logo{
+    width: 30%;
+}
+.header{
+    background-position: center;
+}
+
+
+/*============ABOUT-SECTION=============*/
+
+.about .content p{
+    line-height: 22px;
+}
+
+
+/*=============SERVICE-SECTION=============*/
+    .service .box{
+        width: 24%;
+
+    }
+/*==============HIRE ME!===============*/
+/*==========WORKS=========*/
+/*=============CLIENTS==============*/
+.clients{
+    min-height: 500px;
+}
+/*=========CONTACT-SAECTION==========*/
+.contact .left{
+    width: 100%;
+}
+.contact .right{
+    width: 100%;
+}
+.button-align{
+    width: 100%;
+    margin-top: 20px;
+}
+}
+@media only screen and (max-width:768px){
+/*========ROOT-ELEMENT=======*/
+    html, body{
+        font-size: 14px;
+    }
+/*=========HEADER-SECTION========*/
+.header{
+    background-position: right;
+}
+.navigation{
+    justify-content: space-between;
+}
+.nav-icon{
+    border: 1px solid red;
+}
+.nav-icon a{
+    display: inline;
+    
+} 
+.navigation ul{
+    display: none;
+}
+/*============ABOUT-SECTION=============*/
+.about .image{
+    width: 100%;
+    padding: 20px;
+}
+.about .content{
+    width: 100%;
+}
+.about .content p{
+    line-height: 26px;
+    padding: 20px 0;
+}
+/*=============SERVICE-SECTION=============*/
+    .service .box{
+        width: 45%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .service .box p{
+        line-height: 26px;  
+        padding: 10px 0;
+    }
+
+/*==========WORKS=========*/
+
+    .image-gallery{
+        grid-template-columns: repeat( 2, 1fr);
+    }
+   
+}
+@media only screen and (max-width: 576px){
+/*========ROOT-ELEMETN=======*/
+
+/*=========COMMON-CLASSES=========*/
+/*=========HEADER-SECTION========*/
+.header .header-text h1{
+    font-size: 1.2rem;
+}
+.header .header-text {
+    width: 85%;
+}
+/*============ABOUT-SECTION=============*/
+/*=============SERVICE-SECTION=============*/
+.service .box{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+/*==============HIRE ME!===============*/
+.hire-me .align h1{
+    font-size: 1.5rem;
+    padding: 20px;
+    line-height: 26px;
+}
+/*==========WORKS=========*/
+.nav-bar ul{
+    justify-content: center;
+}
+.nav-bar ul li{
+    padding-right: 15px;
+}
+.image-gallery{
+    grid-template-columns: repeat(1, 1fr);
+}
+/*=============CLIENTS==============*/
+.clients h1{
+    font-size: 1.5rem;
+}
+/*=========CONTACT-SAECTION==========*/
+.contact .fixed-width h1{
+    font-size: 1.5rem;
+}
+.black-background p{
+    text-align: center;
+}
+}
+@media only screen and (max-width: 380px){
+/*========ROOT-ELEMETN=======*/
+
+/*=========COMMON-CLASSES=========*/
+/*=========HEADER-SECTION========*/
+/*============ABOUT-SECTION=============*/
+/*=============SERVICE-SECTION=============*/
+/*==============HIRE ME!===============*/
+/*==========WORKS=========*/
+.nav-bar ul li{
+    padding-right: 10px;
+}
+/*=============CLIENTS==============*/
+/*=========CONTACT-SAECTION==========*/
+
+}
