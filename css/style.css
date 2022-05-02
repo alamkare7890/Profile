@@ -479,9 +479,7 @@ html, body{
 .navigation{
     justify-content: space-between;
 }
-.nav-icon{
-    border: 1px solid red;
-}
+
 .nav-icon a{
     display: inline;
     
