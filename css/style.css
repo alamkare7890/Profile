@@ -10,6 +10,15 @@ html, body{
     font-size: 16px;
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #64aaba;
+}
+body::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px 0 #000;
+}
 /*=========COMMON-CLASSES=========*/
 .container{
     width: 95%;
@@ -63,6 +72,9 @@ html, body{
     color: #f1f1f1;
     transition: all 500ms linear;
 }
+.navigation .navclose{
+    display: none;
+}
 .navigation .logo:hover{
 
     transform: translatex(30px);
@@ -77,11 +89,12 @@ html, body{
 .navigation ul li{
     padding-left: 30px;
     list-style-type: none;
+    transition: all 0.5s ease;
+    padding: 10px;  
 }
 .navigation ul li:hover{
     background-color: cyan;
     margin-left: 50px;
-    padding: 10px;  
     border-radius: 5px;
 }
 .navigation ul li a{
@@ -187,7 +200,7 @@ html, body{
 .service .box h1{
     font-size: 1.2rem;
     color: #333333;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     padding: 20px 0;
 }
 .service .box p{
@@ -258,6 +271,7 @@ html, body{
     text-transform: uppercase;
     text-decoration: none;
     color: #999999;
+    transition: all 0.5s ease; 
 }
 .nav-bar ul li a:hover{
     border-bottom: 5px solid gainsboro;
@@ -478,14 +492,34 @@ html, body{
 }
 .navigation{
     justify-content: space-between;
+    position: relative;
 }
 .nav-icon a{
     display: inline;
     
 } 
+
 .navigation ul{
-    display: none;
+    transition: all 0.5s ease;
+    width: 180px;
+    background-color: #64aaba;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    padding: 25px;
+    border-radius: 5px;
+    border: 5px solid #F4F4F4;
 }
+.navigation ul li{
+    padding-bottom: 15px;
+}
+.navigation ul li:hover{
+    background-color: none;
+    margin: 0;
+}
+
+
 /*============ABOUT-SECTION=============*/
 .about .image{
     width: 100%;
