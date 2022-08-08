@@ -500,6 +500,7 @@ body::-webkit-scrollbar-track{
 } 
 
 .navigation ul{
+    display: none;
     transition: all 0.5s ease;
     width: 180px;
     background-color: #64aaba;
